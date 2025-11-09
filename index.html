@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kreida UA — легкі базові образи</title>
-  <meta name="description" content="Kreida UA. Льон, бавовна, спокійні відтінки. Базові речі, що легко поєднуються." />
+  <title>Kreida UA — крейда та глина для навчання і творчості</title>
+  <meta name="description" content="Kreida UA: шкільна та художня крейда, вулична крейда і натуральна глина для розвитку та творчості." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
@@ -23,8 +23,8 @@
 
       <nav class="nav" aria-label="Головне меню">
         <a href="#catalog">Каталог</a>
-        <a href="#story">Історія</a>
-        <a href="#lookbook">Lookbook</a>
+        <a href="#story">Про нас</a>
+        <a href="#lookbook">Галерея</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Контакти</a>
       </nav>
@@ -35,9 +35,9 @@
   <section class="hero">
     <div class="container hero__grid">
       <div class="hero__copy">
-        <p class="eyebrow">нова капсула</p>
-        <h1>Природна простота<br>і комфорт у кожному русі</h1>
-        <p class="lead">Льон і бавовна у м’яких відтінках молока, піску і шавлії.</p>
+        <p class="eyebrow">для школи, дому та студій</p>
+        <h1>Крейда та глина<br>для навчання і творчості</h1>
+        <p class="lead">Безпечні матеріали, приємні на дотик, з чистими пігментами й акуратним пилом.</p>
         <div class="cta-row">
           <a class="btn" href="#catalog">Дивитися каталог</a>
           <a class="btn btn-outline" href="#story">Дізнатися більше</a>
@@ -45,9 +45,9 @@
       </div>
 
       <div class="hero__collage">
-        <img src="assets/hero-a.jpg" alt="Лук 1 в молочному відтінку" class="tile t1" fetchpriority="high" decoding="async">
-        <img src="assets/hero-b.jpg" alt="Лук 2 в піщаному відтінку" class="tile t2" loading="lazy">
-        <img src="assets/hero-c.jpg" alt="Лук 3 у кольорі шавлії" class="tile t3" loading="lazy">
+        <img src="assets/hero-a.jpg" alt="Крейда різнокольорова" class="tile t1" fetchpriority="high" decoding="async">
+        <img src="assets/hero-b.jpg" alt="Вулична крейда для малювання на асфальті" class="tile t2" loading="lazy">
+        <img src="assets/hero-c.jpg" alt="Натуральна глина для ліплення" class="tile t3" loading="lazy">
       </div>
     </div>
   </section>
@@ -57,19 +57,19 @@
     <section class="perks">
       <div class="container perks__grid">
         <article class="perk">
-          <img src="assets/icon-fabric.svg" alt="" aria-hidden="true">
-          <h3>Натуральні тканини</h3>
-          <p>Льон і бавовна для легкого дихання шкіри.</p>
+          <img src="assets/icon-nontoxic.svg" alt="" aria-hidden="true">
+          <h3>Безпечний склад</h3>
+          <p>Нетоксична формула, підходить для дітей (під наглядом дорослих).</p>
+        </article>
+        <article class="perk">
+          <img src="assets/icon-dustless.svg" alt="" aria-hidden="true">
+          <h3>Менше пилу</h3>
+          <p>Оптимізована твердість — чисті дошки та руки.</p>
         </article>
         <article class="perk">
           <img src="assets/icon-ukraine.svg" alt="" aria-hidden="true">
           <h3>Зроблено в Україні</h3>
-          <p>Малі партії і чесна ціна.</p>
-        </article>
-        <article class="perk">
-          <img src="assets/icon-size.svg" alt="" aria-hidden="true">
-          <h3>Точна посадка</h3>
-          <p>Гнучкі розміри і індивідуальні правки.</p>
+          <p>Стабільна якість і швидка логістика.</p>
         </article>
       </div>
     </section>
@@ -81,65 +81,69 @@
           <h2>Каталог</h2>
           <div class="chips" role="tablist" aria-label="Фільтри">
             <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Усе</button>
-            <button class="chip" data-filter="dress" role="tab" aria-selected="false">Сукні</button>
-            <button class="chip" data-filter="top" role="tab" aria-selected="false">Верх</button>
-            <button class="chip" data-filter="bottom" role="tab" aria-selected="false">Низ</button>
+            <button class="chip" data-filter="chalk" role="tab" aria-selected="false">Крейда</button>
+            <button class="chip" data-filter="clay" role="tab" aria-selected="false">Глина</button>
+            <button class="chip" data-filter="sets" role="tab" aria-selected="false">Набори</button>
           </div>
         </div>
 
         <div class="grid">
-          <article class="card product" data-cat="dress">
-            <img src="assets/p1.jpg" alt="Лляна сукня Milk" loading="lazy">
+          <!-- Шкільна крейда -->
+          <article class="card product" data-cat="chalk">
+            <img src="assets/p1.jpg" alt="Шкільна крейда біла, 100 шт" loading="lazy">
             <div class="card__body">
               <div>
-                <h3>Сукня Milk</h3>
-                <p class="muted">льон 100%</p>
+                <h3>Крейда Шкільна (біла)</h3>
+                <p class="muted">Ø 10 мм · 100 шт · мало пилу</p>
               </div>
               <div class="card__cta">
-                <p class="price">2 450 ₴</p>
-                <button class="btn btn-ghost" data-product="Сукня Milk">Деталі</button>
+                <p class="price">від 120 ₴</p>
+                <button class="btn btn-ghost" data-product="Крейда Шкільна (біла) — 100 шт">Деталі</button>
               </div>
             </div>
           </article>
 
-          <article class="card product" data-cat="top">
-            <img src="assets/p2.jpg" alt="Сорочка Sand" loading="lazy">
+          <!-- Вулична (асфальт) -->
+          <article class="card product" data-cat="chalk">
+            <img src="assets/p2.jpg" alt="Крейда вулична кольорова" loading="lazy">
             <div class="card__body">
               <div>
-                <h3>Сорочка Sand</h3>
-                <p class="muted">бавовна 100%</p>
+                <h3>Крейда Вулична (кольорова)</h3>
+                <p class="muted">12 кольорів · великі палички</p>
               </div>
               <div class="card__cta">
-                <p class="price">1 690 ₴</p>
-                <button class="btn btn-ghost" data-product="Сорочка Sand">Деталі</button>
+                <p class="price">від 85 ₴</p>
+                <button class="btn btn-ghost" data-product="Крейда Вулична (12 кольорів)">Деталі</button>
               </div>
             </div>
           </article>
 
-          <article class="card product" data-cat="bottom">
-            <img src="assets/p3.jpg" alt="Штани Sage" loading="lazy">
+          <!-- Натуральна глина -->
+          <article class="card product" data-cat="clay">
+            <img src="assets/p3.jpg" alt="Глина натуральна для ліплення" loading="lazy">
             <div class="card__body">
               <div>
-                <h3>Штани Sage</h3>
-                <p class="muted">льон 70% бавовна 30%</p>
+                <h3>Глина Натуральна</h3>
+                <p class="muted">пакет 1 кг · без домішок</p>
               </div>
               <div class="card__cta">
-                <p class="price">1 980 ₴</p>
-                <button class="btn btn-ghost" data-product="Штани Sage">Деталі</button>
+                <p class="price">від 95 ₴</p>
+                <button class="btn btn-ghost" data-product="Глина Натуральна — 1 кг">Деталі</button>
               </div>
             </div>
           </article>
 
-          <article class="card product" data-cat="top">
-            <img src="assets/p4.jpg" alt="Топ Cacao" loading="lazy">
+          <!-- Набір "Крейда + Глина" -->
+          <article class="card product" data-cat="sets">
+            <img src="assets/p4.jpg" alt="Набір для творчості: крейда та глина" loading="lazy">
             <div class="card__body">
               <div>
-                <h3>Топ Cacao</h3>
-                <p class="muted">бавовна 95% еластан 5%</p>
+                <h3>Набір “Старт творчості”</h3>
+                <p class="muted">крейда кольорова + глина 500 г</p>
               </div>
               <div class="card__cta">
-                <p class="price">1 150 ₴</p>
-                <button class="btn btn-ghost" data-product="Топ Cacao">Деталі</button>
+                <p class="price">від 160 ₴</p>
+                <button class="btn btn-ghost" data-product="Набір Старт творчості">Деталі</button>
               </div>
             </div>
           </article>
@@ -151,31 +155,31 @@
     <section id="story" class="story">
       <div class="container story__grid">
         <div class="story__text">
-          <h2>Історія</h2>
-          <p>Kreida UA народився як маленьке ательє з любові до натуральних тканин і спокійних силуетів.</p>
+          <h2>Про нас</h2>
+          <p>Ми виробляємо крейду та глину, які подобаються дітям, вчителям і майстрам. Збалансована твердість, чисті пігменти, зручний формат.</p>
           <ul class="list">
-            <li>Малі партії і ручний контроль якості</li>
-            <li>Стійкі матеріали та чесне виробництво</li>
-            <li>Кольори: молоко, пісок, шавлія, какао</li>
+            <li>Нетоксичні склади та контроль якості</li>
+            <li>Підходить для школи, дому та студій</li>
+            <li>Оптові замовлення для навчальних закладів</li>
           </ul>
         </div>
         <div class="story__media">
-          <img src="assets/about.jpg" alt="Ательє Kreida UA під час роботи" loading="lazy">
+          <img src="assets/about.jpg" alt="Виробництво та пакування крейди та глини" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- Lookbook -->
+    <!-- Gallery -->
     <section id="lookbook" class="lookbook">
       <div class="container">
-        <h2>Lookbook</h2>
+        <h2>Галерея</h2>
         <div class="masonry">
-          <img src="assets/l1.jpg" alt="Образ 1" class="zoomable" loading="lazy">
-          <img src="assets/l2.jpg" alt="Образ 2" class="zoomable" loading="lazy">
-          <img src="assets/l3.jpg" alt="Образ 3" class="zoomable" loading="lazy">
-          <img src="assets/l4.jpg" alt="Образ 4" class="zoomable" loading="lazy">
-          <img src="assets/l5.jpg" alt="Образ 5" class="zoomable" loading="lazy">
-          <img src="assets/l6.jpg" alt="Образ 6" class="zoomable" loading="lazy">
+          <img src="assets/l1.jpg" alt="Малюнок на дошці крейдою" class="zoomable" loading="lazy">
+          <img src="assets/l2.jpg" alt="Вуличні малюнки на асфальті" class="zoomable" loading="lazy">
+          <img src="assets/l3.jpg" alt="Дитяча творчість з глини" class="zoomable" loading="lazy">
+          <img src="assets/l4.jpg" alt="Інструменти та матеріали" class="zoomable" loading="lazy">
+          <img src="assets/l5.jpg" alt="Навчальний процес з крейдою" class="zoomable" loading="lazy">
+          <img src="assets/l6.jpg" alt="Глиняні фігурки" class="zoomable" loading="lazy">
         </div>
       </div>
     </section>
@@ -185,16 +189,20 @@
       <div class="container">
         <h2>Питання та відповіді</h2>
         <details>
-          <summary>Як визначити розмір</summary>
-          <p>Напишіть параметри — допоможемо підібрати за кілька хвилин.</p>
+          <summary>Чи безпечна крейда для дітей?</summary>
+          <p>Так, формула нетоксична. Рекомендуємо користуватися під наглядом дорослих та уникати вдихання пилу.</p>
         </details>
         <details>
-          <summary>Оплата і доставка</summary>
-          <p>Картка або післяплата. Відправка Новою поштою 1–3 дні.</p>
+          <summary>Залишає пил — що робити?</summary>
+          <p>Ми використовуємо склад із зменшеним пилом. Для дошок — протирання вологою ганчіркою після занять.</p>
         </details>
         <details>
-          <summary>Повернення і обмін</summary>
-          <p>Протягом 14 днів за умови збереження товарного вигляду.</p>
+          <summary>Чи підходить глина для випалу?</summary>
+          <p>Натуральна глина підходить для ліплення. Для випалу уточніть технічні параметри перед замовленням.</p>
+        </details>
+        <details>
+          <summary>Опт для шкіл та студій</summary>
+          <p>Є оптові умови та індивідуальні набори. Напишіть нам у WhatsApp — підкажемо швидко.</p>
         </details>
       </div>
     </section>
@@ -207,10 +215,10 @@
           <a class="link" href="https://www.instagram.com/kreidaua/" target="_blank" rel="noopener">Перейти в профіль</a>
         </div>
         <div class="insta__grid">
-          <img src="assets/ig1.jpg" alt="Kreida UA Instagram 1" class="zoomable" loading="lazy">
-          <img src="assets/ig2.jpg" alt="Kreida UA Instagram 2" class="zoomable" loading="lazy">
-          <img src="assets/ig3.jpg" alt="Kreida UA Instagram 3" class="zoomable" loading="lazy">
-          <img src="assets/ig4.jpg" alt="Kreida UA Instagram 4" class="zoomable" loading="lazy">
+          <img src="assets/ig1.jpg" alt="Крейда Kreida UA" class="zoomable" loading="lazy">
+          <img src="assets/ig2.jpg" alt="Глина Kreida UA" class="zoomable" loading="lazy">
+          <img src="assets/ig3.jpg" alt="Малюнки крейдою" class="zoomable" loading="lazy">
+          <img src="assets/ig4.jpg" alt="Процес ліплення з глини" class="zoomable" loading="lazy">
         </div>
       </div>
     </section>
@@ -219,7 +227,7 @@
     <section id="contact" class="contact">
       <div class="container contact__inner">
         <h2>Зв’яжіться з нами</h2>
-        <p>Підберемо розмір, порадимо образ, відповімо на запитання.</p>
+        <p>Замовлення, опт, поради щодо вибору — відповімо швидко.</p>
         <div class="cta-row">
           <a class="btn" href="https://t.me/QusaiDaboubi" target="_blank" rel="noopener">Telegram</a>
           <a class="btn" href="https://wa.me/962777547537" target="_blank" rel="noopener">WhatsApp</a>
@@ -235,8 +243,8 @@
       <p>© <span id="y"></span> Kreida UA</p>
       <nav class="footer__nav" aria-label="Нижнє меню">
         <a href="#catalog">Каталог</a>
-        <a href="#story">Історія</a>
-        <a href="#lookbook">Lookbook</a>
+        <a href="#story">Про нас</a>
+        <a href="#lookbook">Галерея</a>
         <a href="#contact">Контакти</a>
       </nav>
     </div>
@@ -247,7 +255,7 @@
     <article class="modal">
       <button class="modal__close" aria-label="Закрити">×</button>
       <h3 id="productTitle">Товар</h3>
-      <p>Матеріал: льон або бавовна. Розміри: XS–L. Відправка 1–3 дні.</p>
+      <p>Склад та варіанти пакування повідомимо у відповіді. Доставка 1–3 дні.</p>
       <div class="cta-row">
         <a class="btn" id="whBtn" target="_blank" rel="noopener">Замовити у WhatsApp</a>
       </div>
@@ -289,7 +297,7 @@
       chips.forEach(c => { c.classList.remove('is-active'); c.setAttribute('aria-selected','false'); });
       chip.classList.add('is-active'); chip.setAttribute('aria-selected','true');
       const f = chip.dataset.filter;
-      cards.forEach(card => card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none');
+      cards.forEach(card => { card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none'; });
     }));
   </script>
 </body>
