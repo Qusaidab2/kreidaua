@@ -3,362 +3,294 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kreida UA — природна естетика одягу</title>
-  <meta name="description" content="Kreida UA: легкі силуети, натуральні тканини, пастельні відтінки. Одяг, що підкреслює вашу природу." />
+  <title>Kreida UA — легкі базові образи</title>
+  <meta name="description" content="Kreida UA. Льон, бавовна, спокійні відтінки. Базові речі, що легко поєднуються." />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="preload" href="assets/hero.jpg" as="image">
-  <link rel="prefetch" href="https://www.instagram.com/kreidaua/" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Kreida UA — природна естетика одягу">
-  <meta property="og:description" content="Натуральні тканини та м’які форми для кожного дня.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/hero.jpg">
-  <meta name="theme-color" content="#b6c9a9">
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"ClothingStore",
-    "name":"Kreida UA",
-    "image":"assets/hero.jpg",
-    "url":"https://example.com",
-    "sameAs":["https://www.instagram.com/kreidaua/"],
-    "address":{"@type":"PostalAddress","addressCountry":"UA"},
-    "brand":{"@type":"Brand","name":"Kreida UA"}
-  }
-  </script>
-  <style>
-    /* Small enhancement for smooth anchor focus */
-    :target { scroll-margin-top: 80px; }
-  </style>
+  <meta name="theme-color" content="#ece8e1">
 </head>
 <body>
-
-  <a class="visually-hidden" href="#main">Перейти до контенту</a>
+  <a class="sr-only" href="#main">Перейти до контенту</a>
 
   <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Kreida UA, на головну">Kreida<span>UA</span></a>
+  <header class="header">
+    <div class="container header__row">
+      <a href="#" class="brand" aria-label="Kreida UA на головну">Kreida UA</a>
 
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Відкрити меню">
-      <label for="nav-toggle" class="burger" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </label>
+      <label for="nav-toggle" class="burger" aria-hidden="true"><span></span><span></span><span></span></label>
 
       <nav class="nav" aria-label="Головне меню">
         <a href="#catalog">Каталог</a>
-        <a href="#about">Про бренд</a>
+        <a href="#story">Історія</a>
         <a href="#lookbook">Lookbook</a>
-        <a href="#reviews">Відгуки</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Контакти</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home" aria-label="Головний банер">
-    <picture>
-      <source srcset="assets/hero.webp" type="image/webp">
-      <img src="assets/hero.jpg" alt="Легкий жіночий образ у пастельних відтінках" loading="eager" fetchpriority="high">
-    </picture>
-    <div class="hero-overlay">
-      <h1>Природна естетика щодня</h1>
-      <p>Натуральні тканини. М’які силуети. Спокійні кольори.</p>
-      <a href="#catalog" class="btn">Переглянути колекцію</a>
+  <!-- Hero Collage -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">нова капсула</p>
+        <h1>Природна простота<br>і комфорт у кожному русі</h1>
+        <p class="lead">Льон і бавовна у м’яких відтінках молока, піску і шавлії.</p>
+        <div class="cta-row">
+          <a class="btn" href="#catalog">Дивитися каталог</a>
+          <a class="btn btn-outline" href="#story">Дізнатися більше</a>
+        </div>
+      </div>
+
+      <div class="hero__collage">
+        <img src="assets/hero-a.jpg" alt="Лук 1 в молочному відтінку" class="tile t1" fetchpriority="high" decoding="async">
+        <img src="assets/hero-b.jpg" alt="Лук 2 в піщаному відтінку" class="tile t2" loading="lazy">
+        <img src="assets/hero-c.jpg" alt="Лук 3 у кольорі шавлії" class="tile t3" loading="lazy">
+      </div>
     </div>
   </section>
 
   <main id="main">
-    <!-- Highlights -->
-    <section class="highlights container" aria-label="Переваги">
-      <div class="card">
-        <img src="assets/icon-fabric.svg" alt="" aria-hidden="true">
-        <h3>Натуральні тканини</h3>
-        <p>Льон, бавовна і приємні суміші для комфорту впродовж дня.</p>
-      </div>
-      <div class="card">
-        <img src="assets/icon-ukraine.svg" alt="" aria-hidden="true">
-        <h3>Вироблено в Україні</h3>
-        <p>Локальне виробництво, контроль якості, чесна ціна.</p>
-      </div>
-      <div class="card">
-        <img src="assets/icon-size.svg" alt="" aria-hidden="true">
-        <h3>Гнучкі розміри</h3>
-        <p>Продумана посадка і можливість індивідуальних правок.</p>
+    <!-- Perks -->
+    <section class="perks">
+      <div class="container perks__grid">
+        <article class="perk">
+          <img src="assets/icon-fabric.svg" alt="" aria-hidden="true">
+          <h3>Натуральні тканини</h3>
+          <p>Льон і бавовна для легкого дихання шкіри.</p>
+        </article>
+        <article class="perk">
+          <img src="assets/icon-ukraine.svg" alt="" aria-hidden="true">
+          <h3>Зроблено в Україні</h3>
+          <p>Малі партії і чесна ціна.</p>
+        </article>
+        <article class="perk">
+          <img src="assets/icon-size.svg" alt="" aria-hidden="true">
+          <h3>Точна посадка</h3>
+          <p>Гнучкі розміри і індивідуальні правки.</p>
+        </article>
       </div>
     </section>
 
     <!-- Catalog -->
-    <section id="catalog" class="catalog container" aria-label="Каталог">
-      <div class="section-head">
-        <h2>Каталог</h2>
-        <a href="#contact" class="link">Отримати консультацію</a>
-      </div>
-
-      <!-- Filter bar -->
-      <div class="filterbar" role="tablist" aria-label="Фільтри каталогу" style="display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px">
-        <button class="btn btn-outline filter is-active" data-filter="all" role="tab" aria-selected="true">Усе</button>
-        <button class="btn btn-outline filter" data-filter="dress" role="tab" aria-selected="false">Сукні</button>
-        <button class="btn btn-outline filter" data-filter="top" role="tab" aria-selected="false">Верх</button>
-        <button class="btn btn-outline filter" data-filter="bottom" role="tab" aria-selected="false">Низ</button>
-      </div>
-
-      <div class="grid">
-        <!-- Card 1 -->
-        <article class="product" data-cat="dress">
-          <picture>
-            <source srcset="assets/p1.webp" type="image/webp">
-            <img src="assets/p1.jpg" alt="Лляна сукня молочного кольору" loading="lazy">
-          </picture>
-          <div class="info">
-            <h3>Лляна сукня Milk</h3>
-            <p class="price">2 450 ₴</p>
-            <button class="btn btn-outline" data-product="Лляна сукня Milk">Деталі</button>
+    <section id="catalog" class="catalog">
+      <div class="container">
+        <div class="section-head">
+          <h2>Каталог</h2>
+          <div class="chips" role="tablist" aria-label="Фільтри">
+            <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">Усе</button>
+            <button class="chip" data-filter="dress" role="tab" aria-selected="false">Сукні</button>
+            <button class="chip" data-filter="top" role="tab" aria-selected="false">Верх</button>
+            <button class="chip" data-filter="bottom" role="tab" aria-selected="false">Низ</button>
           </div>
-        </article>
+        </div>
 
-        <!-- Card 2 -->
-        <article class="product" data-cat="top">
-          <picture>
-            <source srcset="assets/p2.webp" type="image/webp">
-            <img src="assets/p2.jpg" alt="Легка сорочка в піщаному відтінку" loading="lazy">
-          </picture>
-          <div class="info">
-            <h3>Сорочка Sand</h3>
-            <p class="price">1 690 ₴</p>
-            <button class="btn btn-outline" data-product="Сорочка Sand">Деталі</button>
-          </div>
-        </article>
+        <div class="grid">
+          <article class="card product" data-cat="dress">
+            <img src="assets/p1.jpg" alt="Лляна сукня Milk" loading="lazy">
+            <div class="card__body">
+              <div>
+                <h3>Сукня Milk</h3>
+                <p class="muted">льон 100%</p>
+              </div>
+              <div class="card__cta">
+                <p class="price">2 450 ₴</p>
+                <button class="btn btn-ghost" data-product="Сукня Milk">Деталі</button>
+              </div>
+            </div>
+          </article>
 
-        <!-- Card 3 -->
-        <article class="product" data-cat="bottom">
-          <picture>
-            <source srcset="assets/p3.webp" type="image/webp">
-            <img src="assets/p3.jpg" alt="Штани вільного крою кольору шавлії" loading="lazy">
-          </picture>
-          <div class="info">
-            <h3>Штани Sage</h3>
-            <p class="price">1 980 ₴</p>
-            <button class="btn btn-outline" data-product="Штани Sage">Деталі</button>
-          </div>
-        </article>
+          <article class="card product" data-cat="top">
+            <img src="assets/p2.jpg" alt="Сорочка Sand" loading="lazy">
+            <div class="card__body">
+              <div>
+                <h3>Сорочка Sand</h3>
+                <p class="muted">бавовна 100%</p>
+              </div>
+              <div class="card__cta">
+                <p class="price">1 690 ₴</p>
+                <button class="btn btn-ghost" data-product="Сорочка Sand">Деталі</button>
+              </div>
+            </div>
+          </article>
 
-        <!-- Card 4 -->
-        <article class="product" data-cat="top">
-          <picture>
-            <source srcset="assets/p4.webp" type="image/webp">
-            <img src="assets/p4.jpg" alt="Топ у відтінку какао" loading="lazy">
-          </picture>
-          <div class="info">
-            <h3>Топ Cacao</h3>
-            <p class="price">1 150 ₴</p>
-            <button class="btn btn-outline" data-product="Топ Cacao">Деталі</button>
-          </div>
-        </article>
+          <article class="card product" data-cat="bottom">
+            <img src="assets/p3.jpg" alt="Штани Sage" loading="lazy">
+            <div class="card__body">
+              <div>
+                <h3>Штани Sage</h3>
+                <p class="muted">льон 70% бавовна 30%</p>
+              </div>
+              <div class="card__cta">
+                <p class="price">1 980 ₴</p>
+                <button class="btn btn-ghost" data-product="Штани Sage">Деталі</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="top">
+            <img src="assets/p4.jpg" alt="Топ Cacao" loading="lazy">
+            <div class="card__body">
+              <div>
+                <h3>Топ Cacao</h3>
+                <p class="muted">бавовна 95% еластан 5%</p>
+              </div>
+              <div class="card__cta">
+                <p class="price">1 150 ₴</p>
+                <button class="btn btn-ghost" data-product="Топ Cacao">Деталі</button>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="about container" aria-label="Про бренд">
-      <div class="about-img">
-        <picture>
-          <source srcset="assets/about.webp" type="image/webp">
+    <!-- Story -->
+    <section id="story" class="story">
+      <div class="container story__grid">
+        <div class="story__text">
+          <h2>Історія</h2>
+          <p>Kreida UA народився як маленьке ательє з любові до натуральних тканин і спокійних силуетів.</p>
+          <ul class="list">
+            <li>Малі партії і ручний контроль якості</li>
+            <li>Стійкі матеріали та чесне виробництво</li>
+            <li>Кольори: молоко, пісок, шавлія, какао</li>
+          </ul>
+        </div>
+        <div class="story__media">
           <img src="assets/about.jpg" alt="Ательє Kreida UA під час роботи" loading="lazy">
-        </picture>
-      </div>
-      <div class="about-text">
-        <h2>Про бренд</h2>
-        <p>Kreida UA це про простоту і чесність. Ми створюємо речі, які делікатно підкреслюють вашу індивідуальність.</p>
-        <ul class="bullets">
-          <li>Капсульні колекції невеликими партіями</li>
-          <li>Стійкі матеріали та уважне виробництво</li>
-          <li>Спокійні кольори: молоко, пісок, шавлія</li>
-        </ul>
+        </div>
       </div>
     </section>
 
     <!-- Lookbook -->
-    <section id="lookbook" class="lookbook container" aria-label="Lookbook">
-      <h2>Lookbook</h2>
-      <div class="masonry">
-        <img src="assets/l1.jpg" alt="Образ 1" loading="lazy" class="zoomable">
-        <img src="assets/l2.jpg" alt="Образ 2" loading="lazy" class="zoomable">
-        <img src="assets/l3.jpg" alt="Образ 3" loading="lazy" class="zoomable">
-        <img src="assets/l4.jpg" alt="Образ 4" loading="lazy" class="zoomable">
-        <img src="assets/l5.jpg" alt="Образ 5" loading="lazy" class="zoomable">
-        <img src="assets/l6.jpg" alt="Образ 6" loading="lazy" class="zoomable">
-      </div>
-    </section>
-
-    <!-- Reviews -->
-    <section id="reviews" class="reviews container" aria-label="Відгуки клієнтів">
-      <h2>Відгуки</h2>
-      <div class="reviews-row">
-        <blockquote class="review">
-          «Тканини приємні, а посадка ідеальна. Відчуваю легкість.»
-          <cite>- Марія</cite>
-        </blockquote>
-        <blockquote class="review">
-          «Пастельні кольори поєднуються між собою без зусиль.»
-          <cite>- Софія</cite>
-        </blockquote>
-        <blockquote class="review">
-          «Гарна якість за чесну ціну. Швидка відповідь і відправка.»
-          <cite>- Олена</cite>
-        </blockquote>
-      </div>
-    </section>
-
-    <!-- Instagram CTA -->
-    <section class="insta container" aria-label="Instagram">
-      <div class="section-head">
-        <h2>Instagram</h2>
-        <a class="link" href="https://www.instagram.com/kreidaua/" target="_blank" rel="noopener">Перейти в профіль</a>
-      </div>
-      <div class="grid insta-grid">
-        <img src="assets/ig1.jpg" alt="Kreida UA Instagram 1" loading="lazy" class="zoomable">
-        <img src="assets/ig2.jpg" alt="Kreida UA Instagram 2" loading="lazy" class="zoomable">
-        <img src="assets/ig3.jpg" alt="Kreida UA Instagram 3" loading="lazy" class="zoomable">
-        <img src="assets/ig4.jpg" alt="Kreida UA Instagram 4" loading="lazy" class="zoomable">
+    <section id="lookbook" class="lookbook">
+      <div class="container">
+        <h2>Lookbook</h2>
+        <div class="masonry">
+          <img src="assets/l1.jpg" alt="Образ 1" class="zoomable" loading="lazy">
+          <img src="assets/l2.jpg" alt="Образ 2" class="zoomable" loading="lazy">
+          <img src="assets/l3.jpg" alt="Образ 3" class="zoomable" loading="lazy">
+          <img src="assets/l4.jpg" alt="Образ 4" class="zoomable" loading="lazy">
+          <img src="assets/l5.jpg" alt="Образ 5" class="zoomable" loading="lazy">
+          <img src="assets/l6.jpg" alt="Образ 6" class="zoomable" loading="lazy">
+        </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="container" aria-label="Питання та відповіді" style="margin: 28px auto">
-      <h2>FAQ</h2>
-      <details>
-        <summary>Як підібрати розмір</summary>
-        <div style="color:#606060">
-          Зазвичай орієнтуємося на ваші параметри. Напишіть у WhatsApp, підкажемо за 2 хвилини.
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2>Питання та відповіді</h2>
+        <details>
+          <summary>Як визначити розмір</summary>
+          <p>Напишіть параметри — допоможемо підібрати за кілька хвилин.</p>
+        </details>
+        <details>
+          <summary>Оплата і доставка</summary>
+          <p>Картка або післяплата. Відправка Новою поштою 1–3 дні.</p>
+        </details>
+        <details>
+          <summary>Повернення і обмін</summary>
+          <p>Протягом 14 днів за умови збереження товарного вигляду.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="insta">
+      <div class="container">
+        <div class="section-head">
+          <h2>Instagram</h2>
+          <a class="link" href="https://www.instagram.com/kreidaua/" target="_blank" rel="noopener">Перейти в профіль</a>
         </div>
-      </details>
-      <details>
-        <summary>Доставка і оплата</summary>
-        <div style="color:#606060">
-          Відправляємо Новою поштою 1–3 дні. Оплата на картку або післяплата.
+        <div class="insta__grid">
+          <img src="assets/ig1.jpg" alt="Kreida UA Instagram 1" class="zoomable" loading="lazy">
+          <img src="assets/ig2.jpg" alt="Kreida UA Instagram 2" class="zoomable" loading="lazy">
+          <img src="assets/ig3.jpg" alt="Kreida UA Instagram 3" class="zoomable" loading="lazy">
+          <img src="assets/ig4.jpg" alt="Kreida UA Instagram 4" class="zoomable" loading="lazy">
         </div>
-      </details>
-      <details>
-        <summary>Повернення і обмін</summary>
-        <div style="color:#606060">
-          Протягом 14 днів за умови збереження товарного вигляду. Напишіть нам для швидкого оформлення.
-        </div>
-      </details>
+      </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact" aria-label="Контакти">
-      <div class="container contact-inner">
+    <section id="contact" class="contact">
+      <div class="container contact__inner">
         <h2>Зв’яжіться з нами</h2>
         <p>Підберемо розмір, порадимо образ, відповімо на запитання.</p>
-        <div class="cta-buttons">
-          <a class="btn" href="https://t.me/QusaiDaboubi" target="_blank" rel="noopener" aria-label="Відкрити Telegram">Telegram</a>
-          <a class="btn" href="https://wa.me/962777547537" target="_blank" rel="noopener" aria-label="Відкрити WhatsApp">WhatsApp</a>
-          <a class="btn btn-outline" href="mailto:dabadibo.tttt@gmail.com" aria-label="Надіслати Email">Email</a>
+        <div class="cta-row">
+          <a class="btn" href="https://t.me/QusaiDaboubi" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn" href="https://wa.me/962777547537" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" href="mailto:dabadibo.tttt@gmail.com">Email</a>
         </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
+  <footer class="footer">
+    <div class="container footer__row">
       <p>© <span id="y"></span> Kreida UA</p>
-      <nav class="footer-nav" aria-label="Нижнє меню">
+      <nav class="footer__nav" aria-label="Нижнє меню">
         <a href="#catalog">Каталог</a>
-        <a href="#about">Про бренд</a>
+        <a href="#story">Історія</a>
         <a href="#lookbook">Lookbook</a>
         <a href="#contact">Контакти</a>
       </nav>
     </div>
   </footer>
 
-  <!-- Product Modal -->
+  <!-- Modal -->
   <dialog id="productModal" aria-labelledby="productTitle">
     <article class="modal">
-      <button class="modal-close" aria-label="Закрити">×</button>
+      <button class="modal__close" aria-label="Закрити">×</button>
       <h3 id="productTitle">Товар</h3>
-      <p>Матеріал: льон або бавовна. Доступні розміри: XS–L. Відправка 1–3 дні.</p>
-      <div class="cta-buttons">
+      <p>Матеріал: льон або бавовна. Розміри: XS–L. Відправка 1–3 дні.</p>
+      <div class="cta-row">
         <a class="btn" id="whBtn" target="_blank" rel="noopener">Замовити у WhatsApp</a>
       </div>
     </article>
   </dialog>
 
-  <!-- Image Zoom -->
-  <div class="zoombackdrop" hidden>
-    <img class="zoomimg" alt="">
-  </div>
+  <div class="zoombackdrop" hidden><img class="zoomimg" alt=""></div>
 
   <script>
-    // year
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // product modal
     const modal = document.getElementById('productModal');
     const titleEl = document.getElementById('productTitle');
-    const closeBtn = modal.querySelector('.modal-close');
-    document.querySelectorAll('.product .btn-outline').forEach(btn => {
+    const whBtn = document.getElementById('whBtn');
+    document.querySelectorAll('.product .btn-ghost').forEach(btn => {
       btn.addEventListener('click', () => {
         const name = btn.dataset.product || 'Товар';
         titleEl.textContent = name;
-        const msg = encodeURIComponent(`Доброго дня! Цікавить: ${name}`);
-        document.getElementById('whBtn').href = `https://wa.me/962777547537?text=${msg}`;
+        whBtn.href = `https://wa.me/962777547537?text=${encodeURIComponent('Доброго дня! Цікавить: ' + name)}`;
         modal.showModal();
       });
     });
-    closeBtn.addEventListener('click', () => modal.close());
+    modal.querySelector('.modal__close').addEventListener('click', () => modal.close());
+    window.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.open) modal.close(); });
 
-    // image zoom
     const backdrop = document.querySelector('.zoombackdrop');
     const zoomimg = document.querySelector('.zoomimg');
     document.querySelectorAll('.zoomable').forEach(img => {
       img.addEventListener('click', () => {
-        zoomimg.src = img.src;
-        zoomimg.alt = img.alt || '';
-        backdrop.hidden = false;
-        document.body.style.overflow = 'hidden';
+        zoomimg.src = img.src; zoomimg.alt = img.alt || '';
+        backdrop.hidden = false; document.body.style.overflow = 'hidden';
       });
     });
-    backdrop.addEventListener('click', () => {
-      backdrop.hidden = true;
-      zoomimg.src = '';
-      document.body.style.overflow = '';
-    });
+    backdrop.addEventListener('click', () => { backdrop.hidden = true; zoomimg.src = ''; document.body.style.overflow = ''; });
 
-    // simple filter
-    const filters = document.querySelectorAll('.filter');
+    const chips = document.querySelectorAll('.chip');
     const cards = document.querySelectorAll('.product');
-    filters.forEach(f => f.addEventListener('click', () => {
-      filters.forEach(x => { x.classList.remove('is-active'); x.setAttribute('aria-selected','false'); });
-      f.classList.add('is-active'); f.setAttribute('aria-selected','true');
-      const cat = f.dataset.filter;
-      cards.forEach(c => {
-        c.style.display = (cat === 'all' || c.dataset.cat === cat) ? '' : 'none';
-      });
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      chips.forEach(c => { c.classList.remove('is-active'); c.setAttribute('aria-selected','false'); });
+      chip.classList.add('is-active'); chip.setAttribute('aria-selected','true');
+      const f = chip.dataset.filter;
+      cards.forEach(card => card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none');
     }));
-
-    // accessibility: close modal with Esc
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal.open) modal.close();
-    });
   </script>
-
-  <!-- Utility: visually hidden class for skip link -->
-  <style>
-    .visually-hidden {
-      position: absolute !important;
-      width: 1px; height: 1px; padding: 0; margin: -1px;
-      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
-    }
-    .filter.is-active { outline: 2px solid var(--brand); }
-  </style>
 </body>
 </html>
